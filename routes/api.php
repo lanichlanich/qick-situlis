@@ -55,4 +55,23 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Surat Masuk
     Route::post('surat-masuks/media', 'SuratMasukApiController@storeMedia')->name('surat-masuks.storeMedia');
     Route::apiResource('surat-masuks', 'SuratMasukApiController');
+
+    // Sk Kgb Pns
+    Route::post('sk-kgb-pns/media', 'SkKgbPnsApiController@storeMedia')->name('sk-kgb-pns.storeMedia');
+    Route::apiResource('sk-kgb-pns', 'SkKgbPnsApiController');
+
+    // Sk Cpns
+    Route::post('sk-cpns/media', 'SkCpnsApiController@storeMedia')->name('sk-cpns.storeMedia');
+    Route::apiResource('sk-cpns', 'SkCpnsApiController');
+
+    // Sk Kepangkatan Pns
+    Route::post('sk-kepangkatan-pns/media', 'SkKepangkatanPnsApiController@storeMedia')->name('sk-kepangkatan-pns.storeMedia');
+    Route::apiResource('sk-kepangkatan-pns', 'SkKepangkatanPnsApiController');
+
+    // Sk Pengangkatan Honorer
+    Route::post('sk-pengangkatan-honorers/media', 'SkPengangkatanHonorerApiController@storeMedia')->name('sk-pengangkatan-honorers.storeMedia');
+    Route::apiResource('sk-pengangkatan-honorers', 'SkPengangkatanHonorerApiController');
+
+    // Ptk
+    Route::apiResource('ptks', 'PtkApiController');
 });

@@ -444,6 +444,106 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 109,
+                'title' => 'sk_kgb_pn_create',
+            ],
+            [
+                'id'    => 110,
+                'title' => 'sk_kgb_pn_edit',
+            ],
+            [
+                'id'    => 111,
+                'title' => 'sk_kgb_pn_show',
+            ],
+            [
+                'id'    => 112,
+                'title' => 'sk_kgb_pn_delete',
+            ],
+            [
+                'id'    => 113,
+                'title' => 'sk_kgb_pn_access',
+            ],
+            [
+                'id'    => 114,
+                'title' => 'sk_cpn_create',
+            ],
+            [
+                'id'    => 115,
+                'title' => 'sk_cpn_edit',
+            ],
+            [
+                'id'    => 116,
+                'title' => 'sk_cpn_show',
+            ],
+            [
+                'id'    => 117,
+                'title' => 'sk_cpn_delete',
+            ],
+            [
+                'id'    => 118,
+                'title' => 'sk_cpn_access',
+            ],
+            [
+                'id'    => 119,
+                'title' => 'sk_kepangkatan_pn_create',
+            ],
+            [
+                'id'    => 120,
+                'title' => 'sk_kepangkatan_pn_edit',
+            ],
+            [
+                'id'    => 121,
+                'title' => 'sk_kepangkatan_pn_show',
+            ],
+            [
+                'id'    => 122,
+                'title' => 'sk_kepangkatan_pn_delete',
+            ],
+            [
+                'id'    => 123,
+                'title' => 'sk_kepangkatan_pn_access',
+            ],
+            [
+                'id'    => 124,
+                'title' => 'sk_pengangkatan_honorer_create',
+            ],
+            [
+                'id'    => 125,
+                'title' => 'sk_pengangkatan_honorer_edit',
+            ],
+            [
+                'id'    => 126,
+                'title' => 'sk_pengangkatan_honorer_show',
+            ],
+            [
+                'id'    => 127,
+                'title' => 'sk_pengangkatan_honorer_delete',
+            ],
+            [
+                'id'    => 128,
+                'title' => 'sk_pengangkatan_honorer_access',
+            ],
+            [
+                'id'    => 129,
+                'title' => 'ptk_create',
+            ],
+            [
+                'id'    => 130,
+                'title' => 'ptk_edit',
+            ],
+            [
+                'id'    => 131,
+                'title' => 'ptk_show',
+            ],
+            [
+                'id'    => 132,
+                'title' => 'ptk_delete',
+            ],
+            [
+                'id'    => 133,
+                'title' => 'ptk_access',
+            ],
+            [
+                'id'    => 134,
                 'title' => 'profile_password_edit',
             ],
         ];

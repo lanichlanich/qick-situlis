@@ -108,6 +108,34 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::post('surat-masuks/ckmedia', 'SuratMasukController@storeCKEditorImages')->name('surat-masuks.storeCKEditorImages');
     Route::resource('surat-masuks', 'SuratMasukController');
 
+    // Sk Kgb Pns
+    Route::delete('sk-kgb-pns/destroy', 'SkKgbPnsController@massDestroy')->name('sk-kgb-pns.massDestroy');
+    Route::post('sk-kgb-pns/media', 'SkKgbPnsController@storeMedia')->name('sk-kgb-pns.storeMedia');
+    Route::post('sk-kgb-pns/ckmedia', 'SkKgbPnsController@storeCKEditorImages')->name('sk-kgb-pns.storeCKEditorImages');
+    Route::resource('sk-kgb-pns', 'SkKgbPnsController');
+
+    // Sk Cpns
+    Route::delete('sk-cpns/destroy', 'SkCpnsController@massDestroy')->name('sk-cpns.massDestroy');
+    Route::post('sk-cpns/media', 'SkCpnsController@storeMedia')->name('sk-cpns.storeMedia');
+    Route::post('sk-cpns/ckmedia', 'SkCpnsController@storeCKEditorImages')->name('sk-cpns.storeCKEditorImages');
+    Route::resource('sk-cpns', 'SkCpnsController');
+
+    // Sk Kepangkatan Pns
+    Route::delete('sk-kepangkatan-pns/destroy', 'SkKepangkatanPnsController@massDestroy')->name('sk-kepangkatan-pns.massDestroy');
+    Route::post('sk-kepangkatan-pns/media', 'SkKepangkatanPnsController@storeMedia')->name('sk-kepangkatan-pns.storeMedia');
+    Route::post('sk-kepangkatan-pns/ckmedia', 'SkKepangkatanPnsController@storeCKEditorImages')->name('sk-kepangkatan-pns.storeCKEditorImages');
+    Route::resource('sk-kepangkatan-pns', 'SkKepangkatanPnsController');
+
+    // Sk Pengangkatan Honorer
+    Route::delete('sk-pengangkatan-honorers/destroy', 'SkPengangkatanHonorerController@massDestroy')->name('sk-pengangkatan-honorers.massDestroy');
+    Route::post('sk-pengangkatan-honorers/media', 'SkPengangkatanHonorerController@storeMedia')->name('sk-pengangkatan-honorers.storeMedia');
+    Route::post('sk-pengangkatan-honorers/ckmedia', 'SkPengangkatanHonorerController@storeCKEditorImages')->name('sk-pengangkatan-honorers.storeCKEditorImages');
+    Route::resource('sk-pengangkatan-honorers', 'SkPengangkatanHonorerController');
+
+    // Ptk
+    Route::delete('ptks/destroy', 'PtkController@massDestroy')->name('ptks.massDestroy');
+    Route::resource('ptks', 'PtkController');
+
     Route::get('messenger', 'MessengerController@index')->name('messenger.index');
     Route::get('messenger/create', 'MessengerController@createTopic')->name('messenger.createTopic');
     Route::post('messenger', 'MessengerController@storeTopic')->name('messenger.storeTopic');
