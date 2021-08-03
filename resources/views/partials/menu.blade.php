@@ -84,7 +84,7 @@
                     </li>
                 @endcan
                 @can('persuratan_access')
-                    <li class="nav-item has-treeview {{ request()->is("admin/surat-keluars*") ? "menu-open" : "" }} {{ request()->is("admin/surat-masuks*") ? "menu-open" : "" }}">
+                    <li class="nav-item has-treeview {{ request()->is("admin/surat-keluars*") ? "menu-open" : "" }} {{ request()->is("admin/surat-masuks*") ? "menu-open" : "" }} {{ request()->is("admin/sk-kgb-pns*") ? "menu-open" : "" }} {{ request()->is("admin/sk-cpns*") ? "menu-open" : "" }} {{ request()->is("admin/sk-kepangkatan-pns*") ? "menu-open" : "" }} {{ request()->is("admin/sk-pengangkatan-honorers*") ? "menu-open" : "" }}">
                         <a class="nav-link nav-dropdown-toggle" href="#">
                             <i class="fa-fw nav-icon fas fa-envelope-square">
 
@@ -119,19 +119,55 @@
                                     </a>
                                 </li>
                             @endcan
-                        </ul>
-                    </li>
-                @endcan
-                @can('user_alert_access')
-                    <li class="nav-item">
-                        <a href="{{ route("admin.user-alerts.index") }}" class="nav-link {{ request()->is("admin/user-alerts") || request()->is("admin/user-alerts/*") ? "active" : "" }}">
-                            <i class="fa-fw nav-icon fas fa-bell">
+                            @can('sk_kgb_pn_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.sk-kgb-pns.index") }}" class="nav-link {{ request()->is("admin/sk-kgb-pns") || request()->is("admin/sk-kgb-pns/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-envelope">
 
-                            </i>
-                            <p>
-                                {{ trans('cruds.userAlert.title') }}
-                            </p>
-                        </a>
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.skKgbPn.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('sk_cpn_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.sk-cpns.index") }}" class="nav-link {{ request()->is("admin/sk-cpns") || request()->is("admin/sk-cpns/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-envelope">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.skCpn.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('sk_kepangkatan_pn_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.sk-kepangkatan-pns.index") }}" class="nav-link {{ request()->is("admin/sk-kepangkatan-pns") || request()->is("admin/sk-kepangkatan-pns/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-envelope">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.skKepangkatanPn.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('sk_pengangkatan_honorer_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.sk-pengangkatan-honorers.index") }}" class="nav-link {{ request()->is("admin/sk-pengangkatan-honorers") || request()->is("admin/sk-pengangkatan-honorers/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-envelope">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.skPengangkatanHonorer.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                        </ul>
                     </li>
                 @endcan
                 @can('asset_management_access')
@@ -260,45 +296,6 @@
                         </ul>
                     </li>
                 @endcan
-                @can('faq_management_access')
-                    <li class="nav-item has-treeview {{ request()->is("admin/faq-categories*") ? "menu-open" : "" }} {{ request()->is("admin/faq-questions*") ? "menu-open" : "" }}">
-                        <a class="nav-link nav-dropdown-toggle" href="#">
-                            <i class="fa-fw nav-icon fas fa-question">
-
-                            </i>
-                            <p>
-                                {{ trans('cruds.faqManagement.title') }}
-                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            @can('faq_category_access')
-                                <li class="nav-item">
-                                    <a href="{{ route("admin.faq-categories.index") }}" class="nav-link {{ request()->is("admin/faq-categories") || request()->is("admin/faq-categories/*") ? "active" : "" }}">
-                                        <i class="fa-fw nav-icon fas fa-briefcase">
-
-                                        </i>
-                                        <p>
-                                            {{ trans('cruds.faqCategory.title') }}
-                                        </p>
-                                    </a>
-                                </li>
-                            @endcan
-                            @can('faq_question_access')
-                                <li class="nav-item">
-                                    <a href="{{ route("admin.faq-questions.index") }}" class="nav-link {{ request()->is("admin/faq-questions") || request()->is("admin/faq-questions/*") ? "active" : "" }}">
-                                        <i class="fa-fw nav-icon fas fa-question">
-
-                                        </i>
-                                        <p>
-                                            {{ trans('cruds.faqQuestion.title') }}
-                                        </p>
-                                    </a>
-                                </li>
-                            @endcan
-                        </ul>
-                    </li>
-                @endcan
                 @can('expense_management_access')
                     <li class="nav-item has-treeview {{ request()->is("admin/expense-categories*") ? "menu-open" : "" }} {{ request()->is("admin/income-categories*") ? "menu-open" : "" }} {{ request()->is("admin/expenses*") ? "menu-open" : "" }} {{ request()->is("admin/incomes*") ? "menu-open" : "" }} {{ request()->is("admin/expense-reports*") ? "menu-open" : "" }}">
                         <a class="nav-link nav-dropdown-toggle" href="#">
@@ -372,6 +369,69 @@
                                 </li>
                             @endcan
                         </ul>
+                    </li>
+                @endcan
+                @can('user_alert_access')
+                    <li class="nav-item">
+                        <a href="{{ route("admin.user-alerts.index") }}" class="nav-link {{ request()->is("admin/user-alerts") || request()->is("admin/user-alerts/*") ? "active" : "" }}">
+                            <i class="fa-fw nav-icon fas fa-bell">
+
+                            </i>
+                            <p>
+                                {{ trans('cruds.userAlert.title') }}
+                            </p>
+                        </a>
+                    </li>
+                @endcan
+                @can('faq_management_access')
+                    <li class="nav-item has-treeview {{ request()->is("admin/faq-categories*") ? "menu-open" : "" }} {{ request()->is("admin/faq-questions*") ? "menu-open" : "" }}">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="fa-fw nav-icon fas fa-question">
+
+                            </i>
+                            <p>
+                                {{ trans('cruds.faqManagement.title') }}
+                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            @can('faq_category_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.faq-categories.index") }}" class="nav-link {{ request()->is("admin/faq-categories") || request()->is("admin/faq-categories/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-briefcase">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.faqCategory.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('faq_question_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.faq-questions.index") }}" class="nav-link {{ request()->is("admin/faq-questions") || request()->is("admin/faq-questions/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-question">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.faqQuestion.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                        </ul>
+                    </li>
+                @endcan
+                @can('ptk_access')
+                    <li class="nav-item">
+                        <a href="{{ route("admin.ptks.index") }}" class="nav-link {{ request()->is("admin/ptks") || request()->is("admin/ptks/*") ? "active" : "" }}">
+                            <i class="fa-fw nav-icon fas fa-cogs">
+
+                            </i>
+                            <p>
+                                {{ trans('cruds.ptk.title') }}
+                            </p>
+                        </a>
                     </li>
                 @endcan
                 @php($unread = \App\Models\QaTopic::unreadCount())
