@@ -74,4 +74,39 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
     // Ptk
     Route::apiResource('ptks', 'PtkApiController');
+
+    // Arsip Ijazah
+    Route::post('arsip-ijazahs/media', 'ArsipIjazahApiController@storeMedia')->name('arsip-ijazahs.storeMedia');
+    Route::apiResource('arsip-ijazahs', 'ArsipIjazahApiController');
+
+    // Arsip Bpjs
+    Route::post('arsip-bpjs/media', 'ArsipBpjsApiController@storeMedia')->name('arsip-bpjs.storeMedia');
+    Route::apiResource('arsip-bpjs', 'ArsipBpjsApiController');
+
+    // Arsip Pns Lainnya
+    Route::post('arsip-pns-lainnyas/media', 'ArsipPnsLainnyaApiController@storeMedia')->name('arsip-pns-lainnyas.storeMedia');
+    Route::apiResource('arsip-pns-lainnyas', 'ArsipPnsLainnyaApiController');
+
+    // Arsip Npwp
+    Route::post('arsip-npwps/media', 'ArsipNpwpApiController@storeMedia')->name('arsip-npwps.storeMedia');
+    Route::apiResource('arsip-npwps', 'ArsipNpwpApiController');
+
+    // Arsip Kependudukan
+    Route::post('arsip-kependudukans/media', 'ArsipKependudukanApiController@storeMedia')->name('arsip-kependudukans.storeMedia');
+    Route::apiResource('arsip-kependudukans', 'ArsipKependudukanApiController');
+
+    // Tempat Penyimpanan Buku
+    Route::apiResource('tempat-penyimpanan-bukus', 'TempatPenyimpananBukuApiController');
+
+    // Daftar Buku
+    Route::apiResource('daftar-bukus', 'DaftarBukuApiController');
+
+    // Daftar Buku Perpustakaan
+    Route::apiResource('daftar-buku-perpustakaans', 'DaftarBukuPerpustakaanApiController');
+
+    // Peminjam Buku
+    Route::apiResource('peminjam-bukus', 'PeminjamBukuApiController');
+
+    // Peminjaman Buku
+    Route::apiResource('peminjaman-bukus', 'PeminjamanBukuApiController');
 });
