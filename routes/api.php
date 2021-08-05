@@ -55,4 +55,58 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Surat Masuk
     Route::post('surat-masuks/media', 'SuratMasukApiController@storeMedia')->name('surat-masuks.storeMedia');
     Route::apiResource('surat-masuks', 'SuratMasukApiController');
+
+    // Sk Kgb Pns
+    Route::post('sk-kgb-pns/media', 'SkKgbPnsApiController@storeMedia')->name('sk-kgb-pns.storeMedia');
+    Route::apiResource('sk-kgb-pns', 'SkKgbPnsApiController');
+
+    // Sk Cpns
+    Route::post('sk-cpns/media', 'SkCpnsApiController@storeMedia')->name('sk-cpns.storeMedia');
+    Route::apiResource('sk-cpns', 'SkCpnsApiController');
+
+    // Sk Kepangkatan Pns
+    Route::post('sk-kepangkatan-pns/media', 'SkKepangkatanPnsApiController@storeMedia')->name('sk-kepangkatan-pns.storeMedia');
+    Route::apiResource('sk-kepangkatan-pns', 'SkKepangkatanPnsApiController');
+
+    // Sk Pengangkatan Honorer
+    Route::post('sk-pengangkatan-honorers/media', 'SkPengangkatanHonorerApiController@storeMedia')->name('sk-pengangkatan-honorers.storeMedia');
+    Route::apiResource('sk-pengangkatan-honorers', 'SkPengangkatanHonorerApiController');
+
+    // Ptk
+    Route::apiResource('ptks', 'PtkApiController');
+
+    // Arsip Ijazah
+    Route::post('arsip-ijazahs/media', 'ArsipIjazahApiController@storeMedia')->name('arsip-ijazahs.storeMedia');
+    Route::apiResource('arsip-ijazahs', 'ArsipIjazahApiController');
+
+    // Arsip Bpjs
+    Route::post('arsip-bpjs/media', 'ArsipBpjsApiController@storeMedia')->name('arsip-bpjs.storeMedia');
+    Route::apiResource('arsip-bpjs', 'ArsipBpjsApiController');
+
+    // Arsip Pns Lainnya
+    Route::post('arsip-pns-lainnyas/media', 'ArsipPnsLainnyaApiController@storeMedia')->name('arsip-pns-lainnyas.storeMedia');
+    Route::apiResource('arsip-pns-lainnyas', 'ArsipPnsLainnyaApiController');
+
+    // Arsip Npwp
+    Route::post('arsip-npwps/media', 'ArsipNpwpApiController@storeMedia')->name('arsip-npwps.storeMedia');
+    Route::apiResource('arsip-npwps', 'ArsipNpwpApiController');
+
+    // Arsip Kependudukan
+    Route::post('arsip-kependudukans/media', 'ArsipKependudukanApiController@storeMedia')->name('arsip-kependudukans.storeMedia');
+    Route::apiResource('arsip-kependudukans', 'ArsipKependudukanApiController');
+
+    // Tempat Penyimpanan Buku
+    Route::apiResource('tempat-penyimpanan-bukus', 'TempatPenyimpananBukuApiController');
+
+    // Daftar Buku
+    Route::apiResource('daftar-bukus', 'DaftarBukuApiController');
+
+    // Daftar Buku Perpustakaan
+    Route::apiResource('daftar-buku-perpustakaans', 'DaftarBukuPerpustakaanApiController');
+
+    // Peminjam Buku
+    Route::apiResource('peminjam-bukus', 'PeminjamBukuApiController');
+
+    // Peminjaman Buku
+    Route::apiResource('peminjaman-bukus', 'PeminjamanBukuApiController');
 });

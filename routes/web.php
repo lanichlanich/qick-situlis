@@ -108,6 +108,84 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::post('surat-masuks/ckmedia', 'SuratMasukController@storeCKEditorImages')->name('surat-masuks.storeCKEditorImages');
     Route::resource('surat-masuks', 'SuratMasukController');
 
+    // Sk Kgb Pns
+    Route::delete('sk-kgb-pns/destroy', 'SkKgbPnsController@massDestroy')->name('sk-kgb-pns.massDestroy');
+    Route::post('sk-kgb-pns/media', 'SkKgbPnsController@storeMedia')->name('sk-kgb-pns.storeMedia');
+    Route::post('sk-kgb-pns/ckmedia', 'SkKgbPnsController@storeCKEditorImages')->name('sk-kgb-pns.storeCKEditorImages');
+    Route::resource('sk-kgb-pns', 'SkKgbPnsController');
+
+    // Sk Cpns
+    Route::delete('sk-cpns/destroy', 'SkCpnsController@massDestroy')->name('sk-cpns.massDestroy');
+    Route::post('sk-cpns/media', 'SkCpnsController@storeMedia')->name('sk-cpns.storeMedia');
+    Route::post('sk-cpns/ckmedia', 'SkCpnsController@storeCKEditorImages')->name('sk-cpns.storeCKEditorImages');
+    Route::resource('sk-cpns', 'SkCpnsController');
+
+    // Sk Kepangkatan Pns
+    Route::delete('sk-kepangkatan-pns/destroy', 'SkKepangkatanPnsController@massDestroy')->name('sk-kepangkatan-pns.massDestroy');
+    Route::post('sk-kepangkatan-pns/media', 'SkKepangkatanPnsController@storeMedia')->name('sk-kepangkatan-pns.storeMedia');
+    Route::post('sk-kepangkatan-pns/ckmedia', 'SkKepangkatanPnsController@storeCKEditorImages')->name('sk-kepangkatan-pns.storeCKEditorImages');
+    Route::resource('sk-kepangkatan-pns', 'SkKepangkatanPnsController');
+
+    // Sk Pengangkatan Honorer
+    Route::delete('sk-pengangkatan-honorers/destroy', 'SkPengangkatanHonorerController@massDestroy')->name('sk-pengangkatan-honorers.massDestroy');
+    Route::post('sk-pengangkatan-honorers/media', 'SkPengangkatanHonorerController@storeMedia')->name('sk-pengangkatan-honorers.storeMedia');
+    Route::post('sk-pengangkatan-honorers/ckmedia', 'SkPengangkatanHonorerController@storeCKEditorImages')->name('sk-pengangkatan-honorers.storeCKEditorImages');
+    Route::resource('sk-pengangkatan-honorers', 'SkPengangkatanHonorerController');
+
+    // Ptk
+    Route::delete('ptks/destroy', 'PtkController@massDestroy')->name('ptks.massDestroy');
+    Route::resource('ptks', 'PtkController');
+
+    // Arsip Ijazah
+    Route::delete('arsip-ijazahs/destroy', 'ArsipIjazahController@massDestroy')->name('arsip-ijazahs.massDestroy');
+    Route::post('arsip-ijazahs/media', 'ArsipIjazahController@storeMedia')->name('arsip-ijazahs.storeMedia');
+    Route::post('arsip-ijazahs/ckmedia', 'ArsipIjazahController@storeCKEditorImages')->name('arsip-ijazahs.storeCKEditorImages');
+    Route::resource('arsip-ijazahs', 'ArsipIjazahController');
+
+    // Arsip Bpjs
+    Route::delete('arsip-bpjs/destroy', 'ArsipBpjsController@massDestroy')->name('arsip-bpjs.massDestroy');
+    Route::post('arsip-bpjs/media', 'ArsipBpjsController@storeMedia')->name('arsip-bpjs.storeMedia');
+    Route::post('arsip-bpjs/ckmedia', 'ArsipBpjsController@storeCKEditorImages')->name('arsip-bpjs.storeCKEditorImages');
+    Route::resource('arsip-bpjs', 'ArsipBpjsController');
+
+    // Arsip Pns Lainnya
+    Route::delete('arsip-pns-lainnyas/destroy', 'ArsipPnsLainnyaController@massDestroy')->name('arsip-pns-lainnyas.massDestroy');
+    Route::post('arsip-pns-lainnyas/media', 'ArsipPnsLainnyaController@storeMedia')->name('arsip-pns-lainnyas.storeMedia');
+    Route::post('arsip-pns-lainnyas/ckmedia', 'ArsipPnsLainnyaController@storeCKEditorImages')->name('arsip-pns-lainnyas.storeCKEditorImages');
+    Route::resource('arsip-pns-lainnyas', 'ArsipPnsLainnyaController');
+
+    // Arsip Npwp
+    Route::delete('arsip-npwps/destroy', 'ArsipNpwpController@massDestroy')->name('arsip-npwps.massDestroy');
+    Route::post('arsip-npwps/media', 'ArsipNpwpController@storeMedia')->name('arsip-npwps.storeMedia');
+    Route::post('arsip-npwps/ckmedia', 'ArsipNpwpController@storeCKEditorImages')->name('arsip-npwps.storeCKEditorImages');
+    Route::resource('arsip-npwps', 'ArsipNpwpController');
+
+    // Arsip Kependudukan
+    Route::delete('arsip-kependudukans/destroy', 'ArsipKependudukanController@massDestroy')->name('arsip-kependudukans.massDestroy');
+    Route::post('arsip-kependudukans/media', 'ArsipKependudukanController@storeMedia')->name('arsip-kependudukans.storeMedia');
+    Route::post('arsip-kependudukans/ckmedia', 'ArsipKependudukanController@storeCKEditorImages')->name('arsip-kependudukans.storeCKEditorImages');
+    Route::resource('arsip-kependudukans', 'ArsipKependudukanController');
+
+    // Tempat Penyimpanan Buku
+    Route::delete('tempat-penyimpanan-bukus/destroy', 'TempatPenyimpananBukuController@massDestroy')->name('tempat-penyimpanan-bukus.massDestroy');
+    Route::resource('tempat-penyimpanan-bukus', 'TempatPenyimpananBukuController');
+
+    // Daftar Buku
+    Route::delete('daftar-bukus/destroy', 'DaftarBukuController@massDestroy')->name('daftar-bukus.massDestroy');
+    Route::resource('daftar-bukus', 'DaftarBukuController');
+
+    // Daftar Buku Perpustakaan
+    Route::delete('daftar-buku-perpustakaans/destroy', 'DaftarBukuPerpustakaanController@massDestroy')->name('daftar-buku-perpustakaans.massDestroy');
+    Route::resource('daftar-buku-perpustakaans', 'DaftarBukuPerpustakaanController');
+
+    // Peminjam Buku
+    Route::delete('peminjam-bukus/destroy', 'PeminjamBukuController@massDestroy')->name('peminjam-bukus.massDestroy');
+    Route::resource('peminjam-bukus', 'PeminjamBukuController');
+
+    // Peminjaman Buku
+    Route::delete('peminjaman-bukus/destroy', 'PeminjamanBukuController@massDestroy')->name('peminjaman-bukus.massDestroy');
+    Route::resource('peminjaman-bukus', 'PeminjamanBukuController');
+
     Route::get('messenger', 'MessengerController@index')->name('messenger.index');
     Route::get('messenger/create', 'MessengerController@createTopic')->name('messenger.createTopic');
     Route::post('messenger', 'MessengerController@storeTopic')->name('messenger.storeTopic');

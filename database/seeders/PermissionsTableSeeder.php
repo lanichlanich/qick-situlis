@@ -444,6 +444,314 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 109,
+                'title' => 'sk_kgb_pn_create',
+            ],
+            [
+                'id'    => 110,
+                'title' => 'sk_kgb_pn_edit',
+            ],
+            [
+                'id'    => 111,
+                'title' => 'sk_kgb_pn_show',
+            ],
+            [
+                'id'    => 112,
+                'title' => 'sk_kgb_pn_delete',
+            ],
+            [
+                'id'    => 113,
+                'title' => 'sk_kgb_pn_access',
+            ],
+            [
+                'id'    => 114,
+                'title' => 'sk_cpn_create',
+            ],
+            [
+                'id'    => 115,
+                'title' => 'sk_cpn_edit',
+            ],
+            [
+                'id'    => 116,
+                'title' => 'sk_cpn_show',
+            ],
+            [
+                'id'    => 117,
+                'title' => 'sk_cpn_delete',
+            ],
+            [
+                'id'    => 118,
+                'title' => 'sk_cpn_access',
+            ],
+            [
+                'id'    => 119,
+                'title' => 'sk_kepangkatan_pn_create',
+            ],
+            [
+                'id'    => 120,
+                'title' => 'sk_kepangkatan_pn_edit',
+            ],
+            [
+                'id'    => 121,
+                'title' => 'sk_kepangkatan_pn_show',
+            ],
+            [
+                'id'    => 122,
+                'title' => 'sk_kepangkatan_pn_delete',
+            ],
+            [
+                'id'    => 123,
+                'title' => 'sk_kepangkatan_pn_access',
+            ],
+            [
+                'id'    => 124,
+                'title' => 'sk_pengangkatan_honorer_create',
+            ],
+            [
+                'id'    => 125,
+                'title' => 'sk_pengangkatan_honorer_edit',
+            ],
+            [
+                'id'    => 126,
+                'title' => 'sk_pengangkatan_honorer_show',
+            ],
+            [
+                'id'    => 127,
+                'title' => 'sk_pengangkatan_honorer_delete',
+            ],
+            [
+                'id'    => 128,
+                'title' => 'sk_pengangkatan_honorer_access',
+            ],
+            [
+                'id'    => 129,
+                'title' => 'ptk_create',
+            ],
+            [
+                'id'    => 130,
+                'title' => 'ptk_edit',
+            ],
+            [
+                'id'    => 131,
+                'title' => 'ptk_show',
+            ],
+            [
+                'id'    => 132,
+                'title' => 'ptk_delete',
+            ],
+            [
+                'id'    => 133,
+                'title' => 'ptk_access',
+            ],
+            [
+                'id'    => 134,
+                'title' => 'arsip_digital_access',
+            ],
+            [
+                'id'    => 135,
+                'title' => 'arsip_ijazah_create',
+            ],
+            [
+                'id'    => 136,
+                'title' => 'arsip_ijazah_edit',
+            ],
+            [
+                'id'    => 137,
+                'title' => 'arsip_ijazah_show',
+            ],
+            [
+                'id'    => 138,
+                'title' => 'arsip_ijazah_delete',
+            ],
+            [
+                'id'    => 139,
+                'title' => 'arsip_ijazah_access',
+            ],
+            [
+                'id'    => 140,
+                'title' => 'arsip_bpj_create',
+            ],
+            [
+                'id'    => 141,
+                'title' => 'arsip_bpj_edit',
+            ],
+            [
+                'id'    => 142,
+                'title' => 'arsip_bpj_show',
+            ],
+            [
+                'id'    => 143,
+                'title' => 'arsip_bpj_delete',
+            ],
+            [
+                'id'    => 144,
+                'title' => 'arsip_bpj_access',
+            ],
+            [
+                'id'    => 145,
+                'title' => 'arsip_pns_lainnya_create',
+            ],
+            [
+                'id'    => 146,
+                'title' => 'arsip_pns_lainnya_edit',
+            ],
+            [
+                'id'    => 147,
+                'title' => 'arsip_pns_lainnya_show',
+            ],
+            [
+                'id'    => 148,
+                'title' => 'arsip_pns_lainnya_delete',
+            ],
+            [
+                'id'    => 149,
+                'title' => 'arsip_pns_lainnya_access',
+            ],
+            [
+                'id'    => 150,
+                'title' => 'arsip_npwp_create',
+            ],
+            [
+                'id'    => 151,
+                'title' => 'arsip_npwp_edit',
+            ],
+            [
+                'id'    => 152,
+                'title' => 'arsip_npwp_show',
+            ],
+            [
+                'id'    => 153,
+                'title' => 'arsip_npwp_delete',
+            ],
+            [
+                'id'    => 154,
+                'title' => 'arsip_npwp_access',
+            ],
+            [
+                'id'    => 155,
+                'title' => 'arsip_kependudukan_create',
+            ],
+            [
+                'id'    => 156,
+                'title' => 'arsip_kependudukan_edit',
+            ],
+            [
+                'id'    => 157,
+                'title' => 'arsip_kependudukan_show',
+            ],
+            [
+                'id'    => 158,
+                'title' => 'arsip_kependudukan_delete',
+            ],
+            [
+                'id'    => 159,
+                'title' => 'arsip_kependudukan_access',
+            ],
+            [
+                'id'    => 160,
+                'title' => 'perpustakaan_access',
+            ],
+            [
+                'id'    => 161,
+                'title' => 'tempat_penyimpanan_buku_create',
+            ],
+            [
+                'id'    => 162,
+                'title' => 'tempat_penyimpanan_buku_edit',
+            ],
+            [
+                'id'    => 163,
+                'title' => 'tempat_penyimpanan_buku_show',
+            ],
+            [
+                'id'    => 164,
+                'title' => 'tempat_penyimpanan_buku_delete',
+            ],
+            [
+                'id'    => 165,
+                'title' => 'tempat_penyimpanan_buku_access',
+            ],
+            [
+                'id'    => 166,
+                'title' => 'daftar_buku_create',
+            ],
+            [
+                'id'    => 167,
+                'title' => 'daftar_buku_edit',
+            ],
+            [
+                'id'    => 168,
+                'title' => 'daftar_buku_show',
+            ],
+            [
+                'id'    => 169,
+                'title' => 'daftar_buku_delete',
+            ],
+            [
+                'id'    => 170,
+                'title' => 'daftar_buku_access',
+            ],
+            [
+                'id'    => 171,
+                'title' => 'daftar_buku_perpustakaan_create',
+            ],
+            [
+                'id'    => 172,
+                'title' => 'daftar_buku_perpustakaan_edit',
+            ],
+            [
+                'id'    => 173,
+                'title' => 'daftar_buku_perpustakaan_show',
+            ],
+            [
+                'id'    => 174,
+                'title' => 'daftar_buku_perpustakaan_delete',
+            ],
+            [
+                'id'    => 175,
+                'title' => 'daftar_buku_perpustakaan_access',
+            ],
+            [
+                'id'    => 176,
+                'title' => 'peminjam_buku_create',
+            ],
+            [
+                'id'    => 177,
+                'title' => 'peminjam_buku_edit',
+            ],
+            [
+                'id'    => 178,
+                'title' => 'peminjam_buku_show',
+            ],
+            [
+                'id'    => 179,
+                'title' => 'peminjam_buku_delete',
+            ],
+            [
+                'id'    => 180,
+                'title' => 'peminjam_buku_access',
+            ],
+            [
+                'id'    => 181,
+                'title' => 'peminjaman_buku_create',
+            ],
+            [
+                'id'    => 182,
+                'title' => 'peminjaman_buku_edit',
+            ],
+            [
+                'id'    => 183,
+                'title' => 'peminjaman_buku_show',
+            ],
+            [
+                'id'    => 184,
+                'title' => 'peminjaman_buku_delete',
+            ],
+            [
+                'id'    => 185,
+                'title' => 'peminjaman_buku_access',
+            ],
+            [
+                'id'    => 186,
                 'title' => 'profile_password_edit',
             ],
         ];
