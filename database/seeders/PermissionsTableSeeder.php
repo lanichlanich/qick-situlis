@@ -100,658 +100,638 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 23,
-                'title' => 'asset_management_access',
-            ],
-            [
-                'id'    => 24,
-                'title' => 'asset_category_create',
-            ],
-            [
-                'id'    => 25,
-                'title' => 'asset_category_edit',
-            ],
-            [
-                'id'    => 26,
-                'title' => 'asset_category_show',
-            ],
-            [
-                'id'    => 27,
-                'title' => 'asset_category_delete',
-            ],
-            [
-                'id'    => 28,
-                'title' => 'asset_category_access',
-            ],
-            [
-                'id'    => 29,
-                'title' => 'asset_location_create',
-            ],
-            [
-                'id'    => 30,
-                'title' => 'asset_location_edit',
-            ],
-            [
-                'id'    => 31,
-                'title' => 'asset_location_show',
-            ],
-            [
-                'id'    => 32,
-                'title' => 'asset_location_delete',
-            ],
-            [
-                'id'    => 33,
-                'title' => 'asset_location_access',
-            ],
-            [
-                'id'    => 34,
-                'title' => 'asset_status_create',
-            ],
-            [
-                'id'    => 35,
-                'title' => 'asset_status_edit',
-            ],
-            [
-                'id'    => 36,
-                'title' => 'asset_status_show',
-            ],
-            [
-                'id'    => 37,
-                'title' => 'asset_status_delete',
-            ],
-            [
-                'id'    => 38,
-                'title' => 'asset_status_access',
-            ],
-            [
-                'id'    => 39,
-                'title' => 'asset_create',
-            ],
-            [
-                'id'    => 40,
-                'title' => 'asset_edit',
-            ],
-            [
-                'id'    => 41,
-                'title' => 'asset_show',
-            ],
-            [
-                'id'    => 42,
-                'title' => 'asset_delete',
-            ],
-            [
-                'id'    => 43,
-                'title' => 'asset_access',
-            ],
-            [
-                'id'    => 44,
-                'title' => 'assets_history_access',
-            ],
-            [
-                'id'    => 45,
                 'title' => 'content_management_access',
             ],
             [
-                'id'    => 46,
+                'id'    => 24,
                 'title' => 'content_category_create',
             ],
             [
-                'id'    => 47,
+                'id'    => 25,
                 'title' => 'content_category_edit',
             ],
             [
-                'id'    => 48,
+                'id'    => 26,
                 'title' => 'content_category_show',
             ],
             [
-                'id'    => 49,
+                'id'    => 27,
                 'title' => 'content_category_delete',
             ],
             [
-                'id'    => 50,
+                'id'    => 28,
                 'title' => 'content_category_access',
             ],
             [
-                'id'    => 51,
+                'id'    => 29,
                 'title' => 'content_tag_create',
             ],
             [
-                'id'    => 52,
+                'id'    => 30,
                 'title' => 'content_tag_edit',
             ],
             [
-                'id'    => 53,
+                'id'    => 31,
                 'title' => 'content_tag_show',
             ],
             [
-                'id'    => 54,
+                'id'    => 32,
                 'title' => 'content_tag_delete',
             ],
             [
-                'id'    => 55,
+                'id'    => 33,
                 'title' => 'content_tag_access',
             ],
             [
-                'id'    => 56,
+                'id'    => 34,
                 'title' => 'content_page_create',
             ],
             [
-                'id'    => 57,
+                'id'    => 35,
                 'title' => 'content_page_edit',
             ],
             [
-                'id'    => 58,
+                'id'    => 36,
                 'title' => 'content_page_show',
             ],
             [
-                'id'    => 59,
+                'id'    => 37,
                 'title' => 'content_page_delete',
             ],
             [
-                'id'    => 60,
+                'id'    => 38,
                 'title' => 'content_page_access',
             ],
             [
-                'id'    => 61,
+                'id'    => 39,
                 'title' => 'faq_management_access',
             ],
             [
-                'id'    => 62,
+                'id'    => 40,
                 'title' => 'faq_category_create',
             ],
             [
-                'id'    => 63,
+                'id'    => 41,
                 'title' => 'faq_category_edit',
             ],
             [
-                'id'    => 64,
+                'id'    => 42,
                 'title' => 'faq_category_show',
             ],
             [
-                'id'    => 65,
+                'id'    => 43,
                 'title' => 'faq_category_delete',
             ],
             [
-                'id'    => 66,
+                'id'    => 44,
                 'title' => 'faq_category_access',
             ],
             [
-                'id'    => 67,
+                'id'    => 45,
                 'title' => 'faq_question_create',
             ],
             [
-                'id'    => 68,
+                'id'    => 46,
                 'title' => 'faq_question_edit',
             ],
             [
-                'id'    => 69,
+                'id'    => 47,
                 'title' => 'faq_question_show',
             ],
             [
-                'id'    => 70,
+                'id'    => 48,
                 'title' => 'faq_question_delete',
             ],
             [
-                'id'    => 71,
+                'id'    => 49,
                 'title' => 'faq_question_access',
             ],
             [
-                'id'    => 72,
+                'id'    => 50,
                 'title' => 'expense_management_access',
             ],
             [
-                'id'    => 73,
+                'id'    => 51,
                 'title' => 'expense_category_create',
             ],
             [
-                'id'    => 74,
+                'id'    => 52,
                 'title' => 'expense_category_edit',
             ],
             [
-                'id'    => 75,
+                'id'    => 53,
                 'title' => 'expense_category_show',
             ],
             [
-                'id'    => 76,
+                'id'    => 54,
                 'title' => 'expense_category_delete',
             ],
             [
-                'id'    => 77,
+                'id'    => 55,
                 'title' => 'expense_category_access',
             ],
             [
-                'id'    => 78,
+                'id'    => 56,
                 'title' => 'income_category_create',
             ],
             [
-                'id'    => 79,
+                'id'    => 57,
                 'title' => 'income_category_edit',
             ],
             [
-                'id'    => 80,
+                'id'    => 58,
                 'title' => 'income_category_show',
             ],
             [
-                'id'    => 81,
+                'id'    => 59,
                 'title' => 'income_category_delete',
             ],
             [
-                'id'    => 82,
+                'id'    => 60,
                 'title' => 'income_category_access',
             ],
             [
-                'id'    => 83,
+                'id'    => 61,
                 'title' => 'expense_create',
             ],
             [
-                'id'    => 84,
+                'id'    => 62,
                 'title' => 'expense_edit',
             ],
             [
-                'id'    => 85,
+                'id'    => 63,
                 'title' => 'expense_show',
             ],
             [
-                'id'    => 86,
+                'id'    => 64,
                 'title' => 'expense_delete',
             ],
             [
-                'id'    => 87,
+                'id'    => 65,
                 'title' => 'expense_access',
             ],
             [
-                'id'    => 88,
+                'id'    => 66,
                 'title' => 'income_create',
             ],
             [
-                'id'    => 89,
+                'id'    => 67,
                 'title' => 'income_edit',
             ],
             [
-                'id'    => 90,
+                'id'    => 68,
                 'title' => 'income_show',
             ],
             [
-                'id'    => 91,
+                'id'    => 69,
                 'title' => 'income_delete',
             ],
             [
-                'id'    => 92,
+                'id'    => 70,
                 'title' => 'income_access',
             ],
             [
-                'id'    => 93,
+                'id'    => 71,
                 'title' => 'expense_report_create',
             ],
             [
-                'id'    => 94,
+                'id'    => 72,
                 'title' => 'expense_report_edit',
             ],
             [
-                'id'    => 95,
+                'id'    => 73,
                 'title' => 'expense_report_show',
             ],
             [
-                'id'    => 96,
+                'id'    => 74,
                 'title' => 'expense_report_delete',
             ],
             [
-                'id'    => 97,
+                'id'    => 75,
                 'title' => 'expense_report_access',
             ],
             [
-                'id'    => 98,
+                'id'    => 76,
                 'title' => 'persuratan_access',
             ],
             [
-                'id'    => 99,
+                'id'    => 77,
                 'title' => 'surat_keluar_create',
             ],
             [
-                'id'    => 100,
+                'id'    => 78,
                 'title' => 'surat_keluar_edit',
             ],
             [
-                'id'    => 101,
+                'id'    => 79,
                 'title' => 'surat_keluar_show',
             ],
             [
-                'id'    => 102,
+                'id'    => 80,
                 'title' => 'surat_keluar_delete',
             ],
             [
-                'id'    => 103,
+                'id'    => 81,
                 'title' => 'surat_keluar_access',
             ],
             [
-                'id'    => 104,
+                'id'    => 82,
                 'title' => 'surat_masuk_create',
             ],
             [
-                'id'    => 105,
+                'id'    => 83,
                 'title' => 'surat_masuk_edit',
             ],
             [
-                'id'    => 106,
+                'id'    => 84,
                 'title' => 'surat_masuk_show',
             ],
             [
-                'id'    => 107,
+                'id'    => 85,
                 'title' => 'surat_masuk_delete',
             ],
             [
-                'id'    => 108,
+                'id'    => 86,
                 'title' => 'surat_masuk_access',
             ],
             [
-                'id'    => 109,
+                'id'    => 87,
                 'title' => 'sk_kgb_pn_create',
             ],
             [
-                'id'    => 110,
+                'id'    => 88,
                 'title' => 'sk_kgb_pn_edit',
             ],
             [
-                'id'    => 111,
+                'id'    => 89,
                 'title' => 'sk_kgb_pn_show',
             ],
             [
-                'id'    => 112,
+                'id'    => 90,
                 'title' => 'sk_kgb_pn_delete',
             ],
             [
-                'id'    => 113,
+                'id'    => 91,
                 'title' => 'sk_kgb_pn_access',
             ],
             [
-                'id'    => 114,
+                'id'    => 92,
                 'title' => 'sk_cpn_create',
             ],
             [
-                'id'    => 115,
+                'id'    => 93,
                 'title' => 'sk_cpn_edit',
             ],
             [
-                'id'    => 116,
+                'id'    => 94,
                 'title' => 'sk_cpn_show',
             ],
             [
-                'id'    => 117,
+                'id'    => 95,
                 'title' => 'sk_cpn_delete',
             ],
             [
-                'id'    => 118,
+                'id'    => 96,
                 'title' => 'sk_cpn_access',
             ],
             [
-                'id'    => 119,
+                'id'    => 97,
                 'title' => 'sk_kepangkatan_pn_create',
             ],
             [
-                'id'    => 120,
+                'id'    => 98,
                 'title' => 'sk_kepangkatan_pn_edit',
             ],
             [
-                'id'    => 121,
+                'id'    => 99,
                 'title' => 'sk_kepangkatan_pn_show',
             ],
             [
-                'id'    => 122,
+                'id'    => 100,
                 'title' => 'sk_kepangkatan_pn_delete',
             ],
             [
-                'id'    => 123,
+                'id'    => 101,
                 'title' => 'sk_kepangkatan_pn_access',
             ],
             [
-                'id'    => 124,
+                'id'    => 102,
                 'title' => 'sk_pengangkatan_honorer_create',
             ],
             [
-                'id'    => 125,
+                'id'    => 103,
                 'title' => 'sk_pengangkatan_honorer_edit',
             ],
             [
-                'id'    => 126,
+                'id'    => 104,
                 'title' => 'sk_pengangkatan_honorer_show',
             ],
             [
-                'id'    => 127,
+                'id'    => 105,
                 'title' => 'sk_pengangkatan_honorer_delete',
             ],
             [
-                'id'    => 128,
+                'id'    => 106,
                 'title' => 'sk_pengangkatan_honorer_access',
             ],
             [
-                'id'    => 129,
+                'id'    => 107,
                 'title' => 'ptk_create',
             ],
             [
-                'id'    => 130,
+                'id'    => 108,
                 'title' => 'ptk_edit',
             ],
             [
-                'id'    => 131,
+                'id'    => 109,
                 'title' => 'ptk_show',
             ],
             [
-                'id'    => 132,
+                'id'    => 110,
                 'title' => 'ptk_delete',
             ],
             [
-                'id'    => 133,
+                'id'    => 111,
                 'title' => 'ptk_access',
             ],
             [
-                'id'    => 134,
+                'id'    => 112,
                 'title' => 'arsip_digital_access',
             ],
             [
-                'id'    => 135,
+                'id'    => 113,
                 'title' => 'arsip_ijazah_create',
             ],
             [
-                'id'    => 136,
+                'id'    => 114,
                 'title' => 'arsip_ijazah_edit',
             ],
             [
-                'id'    => 137,
+                'id'    => 115,
                 'title' => 'arsip_ijazah_show',
             ],
             [
-                'id'    => 138,
+                'id'    => 116,
                 'title' => 'arsip_ijazah_delete',
             ],
             [
-                'id'    => 139,
+                'id'    => 117,
                 'title' => 'arsip_ijazah_access',
             ],
             [
-                'id'    => 140,
+                'id'    => 118,
                 'title' => 'arsip_bpj_create',
             ],
             [
-                'id'    => 141,
+                'id'    => 119,
                 'title' => 'arsip_bpj_edit',
             ],
             [
-                'id'    => 142,
+                'id'    => 120,
                 'title' => 'arsip_bpj_show',
             ],
             [
-                'id'    => 143,
+                'id'    => 121,
                 'title' => 'arsip_bpj_delete',
             ],
             [
-                'id'    => 144,
+                'id'    => 122,
                 'title' => 'arsip_bpj_access',
             ],
             [
-                'id'    => 145,
+                'id'    => 123,
                 'title' => 'arsip_pns_lainnya_create',
             ],
             [
-                'id'    => 146,
+                'id'    => 124,
                 'title' => 'arsip_pns_lainnya_edit',
             ],
             [
-                'id'    => 147,
+                'id'    => 125,
                 'title' => 'arsip_pns_lainnya_show',
             ],
             [
-                'id'    => 148,
+                'id'    => 126,
                 'title' => 'arsip_pns_lainnya_delete',
             ],
             [
-                'id'    => 149,
+                'id'    => 127,
                 'title' => 'arsip_pns_lainnya_access',
             ],
             [
-                'id'    => 150,
+                'id'    => 128,
                 'title' => 'arsip_npwp_create',
             ],
             [
-                'id'    => 151,
+                'id'    => 129,
                 'title' => 'arsip_npwp_edit',
             ],
             [
-                'id'    => 152,
+                'id'    => 130,
                 'title' => 'arsip_npwp_show',
             ],
             [
-                'id'    => 153,
+                'id'    => 131,
                 'title' => 'arsip_npwp_delete',
             ],
             [
-                'id'    => 154,
+                'id'    => 132,
                 'title' => 'arsip_npwp_access',
             ],
             [
-                'id'    => 155,
+                'id'    => 133,
                 'title' => 'arsip_kependudukan_create',
             ],
             [
-                'id'    => 156,
+                'id'    => 134,
                 'title' => 'arsip_kependudukan_edit',
             ],
             [
-                'id'    => 157,
+                'id'    => 135,
                 'title' => 'arsip_kependudukan_show',
             ],
             [
-                'id'    => 158,
+                'id'    => 136,
                 'title' => 'arsip_kependudukan_delete',
             ],
             [
-                'id'    => 159,
+                'id'    => 137,
                 'title' => 'arsip_kependudukan_access',
             ],
             [
-                'id'    => 160,
+                'id'    => 138,
                 'title' => 'perpustakaan_access',
             ],
             [
-                'id'    => 161,
+                'id'    => 139,
                 'title' => 'tempat_penyimpanan_buku_create',
             ],
             [
-                'id'    => 162,
+                'id'    => 140,
                 'title' => 'tempat_penyimpanan_buku_edit',
             ],
             [
-                'id'    => 163,
+                'id'    => 141,
                 'title' => 'tempat_penyimpanan_buku_show',
             ],
             [
-                'id'    => 164,
+                'id'    => 142,
                 'title' => 'tempat_penyimpanan_buku_delete',
             ],
             [
-                'id'    => 165,
+                'id'    => 143,
                 'title' => 'tempat_penyimpanan_buku_access',
             ],
             [
-                'id'    => 166,
+                'id'    => 144,
                 'title' => 'daftar_buku_create',
             ],
             [
-                'id'    => 167,
+                'id'    => 145,
                 'title' => 'daftar_buku_edit',
             ],
             [
-                'id'    => 168,
+                'id'    => 146,
                 'title' => 'daftar_buku_show',
             ],
             [
-                'id'    => 169,
+                'id'    => 147,
                 'title' => 'daftar_buku_delete',
             ],
             [
-                'id'    => 170,
+                'id'    => 148,
                 'title' => 'daftar_buku_access',
             ],
             [
-                'id'    => 171,
+                'id'    => 149,
                 'title' => 'daftar_buku_perpustakaan_create',
             ],
             [
-                'id'    => 172,
+                'id'    => 150,
                 'title' => 'daftar_buku_perpustakaan_edit',
             ],
             [
-                'id'    => 173,
+                'id'    => 151,
                 'title' => 'daftar_buku_perpustakaan_show',
             ],
             [
-                'id'    => 174,
+                'id'    => 152,
                 'title' => 'daftar_buku_perpustakaan_delete',
             ],
             [
-                'id'    => 175,
+                'id'    => 153,
                 'title' => 'daftar_buku_perpustakaan_access',
             ],
             [
-                'id'    => 176,
+                'id'    => 154,
                 'title' => 'peminjam_buku_create',
             ],
             [
-                'id'    => 177,
+                'id'    => 155,
                 'title' => 'peminjam_buku_edit',
             ],
             [
-                'id'    => 178,
+                'id'    => 156,
                 'title' => 'peminjam_buku_show',
             ],
             [
-                'id'    => 179,
+                'id'    => 157,
                 'title' => 'peminjam_buku_delete',
             ],
             [
-                'id'    => 180,
+                'id'    => 158,
                 'title' => 'peminjam_buku_access',
             ],
             [
-                'id'    => 181,
+                'id'    => 159,
                 'title' => 'peminjaman_buku_create',
             ],
             [
-                'id'    => 182,
+                'id'    => 160,
                 'title' => 'peminjaman_buku_edit',
             ],
             [
-                'id'    => 183,
+                'id'    => 161,
                 'title' => 'peminjaman_buku_show',
             ],
             [
-                'id'    => 184,
+                'id'    => 162,
                 'title' => 'peminjaman_buku_delete',
             ],
             [
-                'id'    => 185,
+                'id'    => 163,
                 'title' => 'peminjaman_buku_access',
             ],
             [
-                'id'    => 186,
+                'id'    => 164,
+                'title' => 'inventaris_barang_access',
+            ],
+            [
+                'id'    => 165,
+                'title' => 'daftar_ruangan_create',
+            ],
+            [
+                'id'    => 166,
+                'title' => 'daftar_ruangan_edit',
+            ],
+            [
+                'id'    => 167,
+                'title' => 'daftar_ruangan_show',
+            ],
+            [
+                'id'    => 168,
+                'title' => 'daftar_ruangan_delete',
+            ],
+            [
+                'id'    => 169,
+                'title' => 'daftar_ruangan_access',
+            ],
+            [
+                'id'    => 170,
+                'title' => 'daftar_nama_barang_create',
+            ],
+            [
+                'id'    => 171,
+                'title' => 'daftar_nama_barang_edit',
+            ],
+            [
+                'id'    => 172,
+                'title' => 'daftar_nama_barang_show',
+            ],
+            [
+                'id'    => 173,
+                'title' => 'daftar_nama_barang_delete',
+            ],
+            [
+                'id'    => 174,
+                'title' => 'daftar_nama_barang_access',
+            ],
+            [
+                'id'    => 175,
+                'title' => 'daftar_inventaris_barang_create',
+            ],
+            [
+                'id'    => 176,
+                'title' => 'daftar_inventaris_barang_edit',
+            ],
+            [
+                'id'    => 177,
+                'title' => 'daftar_inventaris_barang_show',
+            ],
+            [
+                'id'    => 178,
+                'title' => 'daftar_inventaris_barang_delete',
+            ],
+            [
+                'id'    => 179,
+                'title' => 'daftar_inventaris_barang_access',
+            ],
+            [
+                'id'    => 180,
+                'title' => 'kepegawaian_access',
+            ],
+            [
+                'id'    => 181,
                 'title' => 'profile_password_edit',
             ],
         ];
