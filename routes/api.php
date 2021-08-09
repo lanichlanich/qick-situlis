@@ -10,22 +10,6 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Users
     Route::apiResource('users', 'UsersApiController');
 
-    // Asset Category
-    Route::apiResource('asset-categories', 'AssetCategoryApiController');
-
-    // Asset Location
-    Route::apiResource('asset-locations', 'AssetLocationApiController');
-
-    // Asset Status
-    Route::apiResource('asset-statuses', 'AssetStatusApiController');
-
-    // Asset
-    Route::post('assets/media', 'AssetApiController@storeMedia')->name('assets.storeMedia');
-    Route::apiResource('assets', 'AssetApiController');
-
-    // Assets History
-    Route::apiResource('assets-histories', 'AssetsHistoryApiController', ['except' => ['store', 'show', 'update', 'destroy']]);
-
     // Content Category
     Route::apiResource('content-categories', 'ContentCategoryApiController');
 
@@ -109,4 +93,13 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
     // Peminjaman Buku
     Route::apiResource('peminjaman-bukus', 'PeminjamanBukuApiController');
+
+    // Daftar Ruangan
+    Route::apiResource('daftar-ruangans', 'DaftarRuanganApiController');
+
+    // Daftar Nama Barang
+    Route::apiResource('daftar-nama-barangs', 'DaftarNamaBarangApiController');
+
+    // Daftar Inventaris Barang
+    Route::apiResource('daftar-inventaris-barangs', 'DaftarInventarisBarangApiController');
 });

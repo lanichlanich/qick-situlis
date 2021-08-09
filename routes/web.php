@@ -33,27 +33,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::get('user-alerts/read', 'UserAlertsController@read');
     Route::resource('user-alerts', 'UserAlertsController', ['except' => ['edit', 'update']]);
 
-    // Asset Category
-    Route::delete('asset-categories/destroy', 'AssetCategoryController@massDestroy')->name('asset-categories.massDestroy');
-    Route::resource('asset-categories', 'AssetCategoryController');
-
-    // Asset Location
-    Route::delete('asset-locations/destroy', 'AssetLocationController@massDestroy')->name('asset-locations.massDestroy');
-    Route::resource('asset-locations', 'AssetLocationController');
-
-    // Asset Status
-    Route::delete('asset-statuses/destroy', 'AssetStatusController@massDestroy')->name('asset-statuses.massDestroy');
-    Route::resource('asset-statuses', 'AssetStatusController');
-
-    // Asset
-    Route::delete('assets/destroy', 'AssetController@massDestroy')->name('assets.massDestroy');
-    Route::post('assets/media', 'AssetController@storeMedia')->name('assets.storeMedia');
-    Route::post('assets/ckmedia', 'AssetController@storeCKEditorImages')->name('assets.storeCKEditorImages');
-    Route::resource('assets', 'AssetController');
-
-    // Assets History
-    Route::resource('assets-histories', 'AssetsHistoryController', ['except' => ['create', 'store', 'edit', 'update', 'show', 'destroy']]);
-
     // Content Category
     Route::delete('content-categories/destroy', 'ContentCategoryController@massDestroy')->name('content-categories.massDestroy');
     Route::resource('content-categories', 'ContentCategoryController');
@@ -185,6 +164,18 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     // Peminjaman Buku
     Route::delete('peminjaman-bukus/destroy', 'PeminjamanBukuController@massDestroy')->name('peminjaman-bukus.massDestroy');
     Route::resource('peminjaman-bukus', 'PeminjamanBukuController');
+
+    // Daftar Ruangan
+    Route::delete('daftar-ruangans/destroy', 'DaftarRuanganController@massDestroy')->name('daftar-ruangans.massDestroy');
+    Route::resource('daftar-ruangans', 'DaftarRuanganController');
+
+    // Daftar Nama Barang
+    Route::delete('daftar-nama-barangs/destroy', 'DaftarNamaBarangController@massDestroy')->name('daftar-nama-barangs.massDestroy');
+    Route::resource('daftar-nama-barangs', 'DaftarNamaBarangController');
+
+    // Daftar Inventaris Barang
+    Route::delete('daftar-inventaris-barangs/destroy', 'DaftarInventarisBarangController@massDestroy')->name('daftar-inventaris-barangs.massDestroy');
+    Route::resource('daftar-inventaris-barangs', 'DaftarInventarisBarangController');
 
     Route::get('messenger', 'MessengerController@index')->name('messenger.index');
     Route::get('messenger/create', 'MessengerController@createTopic')->name('messenger.createTopic');
