@@ -3,7 +3,7 @@
 return [
     'actions'                        => 'Tindakan',
     'add'                            => 'Tambah',
-    'allRightsReserved'              => 'Hakcipta dilindungi Undang-Undang.',
+    'allRightsReserved'              => 'Hakcipta terpelihara.',
     'areYouSure'                     => 'Adakah anda pasti?',
     'clickHereToVerify'              => 'Klik di sini untuk pengesahan',
     'create'                         => 'Buat',
@@ -16,7 +16,7 @@ return [
     'emailVerificationSuccess'       => 'Email pengguna berhasil diverifikasi',
     'entries'                        => 'Entri',
     'filterDate'                     => 'Saring berdasarkan bulan',
-    'forgot_password'                => 'Lupa Password',
+    'forgot_password'                => 'Lupa Kata Laluan',
     'home'                           => 'Beranda',
     'list'                           => 'Daftar',
     'login'                          => 'Masuk',
@@ -136,7 +136,7 @@ return [
     'change_notifications_field_1_label'   => 'Hantar notifikasi email ke Pengguna',
     'change_notifications_field_2_label'   => 'Apabila kemasukkan pada CRUD',
     'my_profile'                           => 'Profil Saya',
-    'change_password'                      => 'Kemaskini katalaluan',
+    'change_password'                      => 'Profil',
     'delete_account'                       => 'Hapus Akun',
     'delete_account_warning'               => 'Masukan alamat email anda untuk mengkonfirmasi hapus akun.\nAksi ini tidak akan dapat dibatalkan.',
     'two_factor'                           => [
