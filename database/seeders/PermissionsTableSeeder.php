@@ -732,6 +732,394 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 181,
+                'title' => 'kesiswaan_access',
+            ],
+            [
+                'id'    => 182,
+                'title' => 'tahun_ajaran_create',
+            ],
+            [
+                'id'    => 183,
+                'title' => 'tahun_ajaran_edit',
+            ],
+            [
+                'id'    => 184,
+                'title' => 'tahun_ajaran_show',
+            ],
+            [
+                'id'    => 185,
+                'title' => 'tahun_ajaran_delete',
+            ],
+            [
+                'id'    => 186,
+                'title' => 'tahun_ajaran_access',
+            ],
+            [
+                'id'    => 187,
+                'title' => 'rombongan_belajar_create',
+            ],
+            [
+                'id'    => 188,
+                'title' => 'rombongan_belajar_edit',
+            ],
+            [
+                'id'    => 189,
+                'title' => 'rombongan_belajar_show',
+            ],
+            [
+                'id'    => 190,
+                'title' => 'rombongan_belajar_delete',
+            ],
+            [
+                'id'    => 191,
+                'title' => 'rombongan_belajar_access',
+            ],
+            [
+                'id'    => 192,
+                'title' => 'data_model_access',
+            ],
+            [
+                'id'    => 193,
+                'title' => 'penghasilan_create',
+            ],
+            [
+                'id'    => 194,
+                'title' => 'penghasilan_edit',
+            ],
+            [
+                'id'    => 195,
+                'title' => 'penghasilan_show',
+            ],
+            [
+                'id'    => 196,
+                'title' => 'penghasilan_delete',
+            ],
+            [
+                'id'    => 197,
+                'title' => 'penghasilan_access',
+            ],
+            [
+                'id'    => 198,
+                'title' => 'pendidikan_terakhir_create',
+            ],
+            [
+                'id'    => 199,
+                'title' => 'pendidikan_terakhir_edit',
+            ],
+            [
+                'id'    => 200,
+                'title' => 'pendidikan_terakhir_show',
+            ],
+            [
+                'id'    => 201,
+                'title' => 'pendidikan_terakhir_delete',
+            ],
+            [
+                'id'    => 202,
+                'title' => 'pendidikan_terakhir_access',
+            ],
+            [
+                'id'    => 203,
+                'title' => 'kabupaten_create',
+            ],
+            [
+                'id'    => 204,
+                'title' => 'kabupaten_edit',
+            ],
+            [
+                'id'    => 205,
+                'title' => 'kabupaten_show',
+            ],
+            [
+                'id'    => 206,
+                'title' => 'kabupaten_delete',
+            ],
+            [
+                'id'    => 207,
+                'title' => 'kabupaten_access',
+            ],
+            [
+                'id'    => 208,
+                'title' => 'kecamatan_create',
+            ],
+            [
+                'id'    => 209,
+                'title' => 'kecamatan_edit',
+            ],
+            [
+                'id'    => 210,
+                'title' => 'kecamatan_show',
+            ],
+            [
+                'id'    => 211,
+                'title' => 'kecamatan_delete',
+            ],
+            [
+                'id'    => 212,
+                'title' => 'kecamatan_access',
+            ],
+            [
+                'id'    => 213,
+                'title' => 'agama_create',
+            ],
+            [
+                'id'    => 214,
+                'title' => 'agama_edit',
+            ],
+            [
+                'id'    => 215,
+                'title' => 'agama_show',
+            ],
+            [
+                'id'    => 216,
+                'title' => 'agama_delete',
+            ],
+            [
+                'id'    => 217,
+                'title' => 'agama_access',
+            ],
+            [
+                'id'    => 218,
+                'title' => 'no_urut_create',
+            ],
+            [
+                'id'    => 219,
+                'title' => 'no_urut_edit',
+            ],
+            [
+                'id'    => 220,
+                'title' => 'no_urut_show',
+            ],
+            [
+                'id'    => 221,
+                'title' => 'no_urut_delete',
+            ],
+            [
+                'id'    => 222,
+                'title' => 'no_urut_access',
+            ],
+            [
+                'id'    => 223,
+                'title' => 'bahasa_create',
+            ],
+            [
+                'id'    => 224,
+                'title' => 'bahasa_edit',
+            ],
+            [
+                'id'    => 225,
+                'title' => 'bahasa_show',
+            ],
+            [
+                'id'    => 226,
+                'title' => 'bahasa_delete',
+            ],
+            [
+                'id'    => 227,
+                'title' => 'bahasa_access',
+            ],
+            [
+                'id'    => 228,
+                'title' => 'desa_create',
+            ],
+            [
+                'id'    => 229,
+                'title' => 'desa_edit',
+            ],
+            [
+                'id'    => 230,
+                'title' => 'desa_show',
+            ],
+            [
+                'id'    => 231,
+                'title' => 'desa_delete',
+            ],
+            [
+                'id'    => 232,
+                'title' => 'desa_access',
+            ],
+            [
+                'id'    => 233,
+                'title' => 'moda_transportasi_create',
+            ],
+            [
+                'id'    => 234,
+                'title' => 'moda_transportasi_edit',
+            ],
+            [
+                'id'    => 235,
+                'title' => 'moda_transportasi_show',
+            ],
+            [
+                'id'    => 236,
+                'title' => 'moda_transportasi_delete',
+            ],
+            [
+                'id'    => 237,
+                'title' => 'moda_transportasi_access',
+            ],
+            [
+                'id'    => 238,
+                'title' => 'tahun_create',
+            ],
+            [
+                'id'    => 239,
+                'title' => 'tahun_edit',
+            ],
+            [
+                'id'    => 240,
+                'title' => 'tahun_show',
+            ],
+            [
+                'id'    => 241,
+                'title' => 'tahun_delete',
+            ],
+            [
+                'id'    => 242,
+                'title' => 'tahun_access',
+            ],
+            [
+                'id'    => 243,
+                'title' => 'smp_mt_create',
+            ],
+            [
+                'id'    => 244,
+                'title' => 'smp_mt_edit',
+            ],
+            [
+                'id'    => 245,
+                'title' => 'smp_mt_show',
+            ],
+            [
+                'id'    => 246,
+                'title' => 'smp_mt_delete',
+            ],
+            [
+                'id'    => 247,
+                'title' => 'smp_mt_access',
+            ],
+            [
+                'id'    => 248,
+                'title' => 'kela_create',
+            ],
+            [
+                'id'    => 249,
+                'title' => 'kela_edit',
+            ],
+            [
+                'id'    => 250,
+                'title' => 'kela_show',
+            ],
+            [
+                'id'    => 251,
+                'title' => 'kela_delete',
+            ],
+            [
+                'id'    => 252,
+                'title' => 'kela_access',
+            ],
+            [
+                'id'    => 253,
+                'title' => 'mata_pelajaran_create',
+            ],
+            [
+                'id'    => 254,
+                'title' => 'mata_pelajaran_edit',
+            ],
+            [
+                'id'    => 255,
+                'title' => 'mata_pelajaran_show',
+            ],
+            [
+                'id'    => 256,
+                'title' => 'mata_pelajaran_delete',
+            ],
+            [
+                'id'    => 257,
+                'title' => 'mata_pelajaran_access',
+            ],
+            [
+                'id'    => 258,
+                'title' => 'pangkat_golongan_create',
+            ],
+            [
+                'id'    => 259,
+                'title' => 'pangkat_golongan_edit',
+            ],
+            [
+                'id'    => 260,
+                'title' => 'pangkat_golongan_show',
+            ],
+            [
+                'id'    => 261,
+                'title' => 'pangkat_golongan_delete',
+            ],
+            [
+                'id'    => 262,
+                'title' => 'pangkat_golongan_access',
+            ],
+            [
+                'id'    => 263,
+                'title' => 'tugas_tambahan_create',
+            ],
+            [
+                'id'    => 264,
+                'title' => 'tugas_tambahan_edit',
+            ],
+            [
+                'id'    => 265,
+                'title' => 'tugas_tambahan_show',
+            ],
+            [
+                'id'    => 266,
+                'title' => 'tugas_tambahan_delete',
+            ],
+            [
+                'id'    => 267,
+                'title' => 'tugas_tambahan_access',
+            ],
+            [
+                'id'    => 268,
+                'title' => 'pekerjaan_create',
+            ],
+            [
+                'id'    => 269,
+                'title' => 'pekerjaan_edit',
+            ],
+            [
+                'id'    => 270,
+                'title' => 'pekerjaan_show',
+            ],
+            [
+                'id'    => 271,
+                'title' => 'pekerjaan_delete',
+            ],
+            [
+                'id'    => 272,
+                'title' => 'pekerjaan_access',
+            ],
+            [
+                'id'    => 273,
+                'title' => 'daftar_siswa_create',
+            ],
+            [
+                'id'    => 274,
+                'title' => 'daftar_siswa_edit',
+            ],
+            [
+                'id'    => 275,
+                'title' => 'daftar_siswa_show',
+            ],
+            [
+                'id'    => 276,
+                'title' => 'daftar_siswa_delete',
+            ],
+            [
+                'id'    => 277,
+                'title' => 'daftar_siswa_access',
+            ],
+            [
+                'id'    => 278,
                 'title' => 'profile_password_edit',
             ],
         ];

@@ -113,6 +113,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
 
     // Ptk
     Route::delete('ptks/destroy', 'PtkController@massDestroy')->name('ptks.massDestroy');
+    Route::post('ptks/parse-csv-import', 'PtkController@parseCsvImport')->name('ptks.parseCsvImport');
+    Route::post('ptks/process-csv-import', 'PtkController@processCsvImport')->name('ptks.processCsvImport');
     Route::resource('ptks', 'PtkController');
 
     // Arsip Ijazah
@@ -176,6 +178,120 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     // Daftar Inventaris Barang
     Route::delete('daftar-inventaris-barangs/destroy', 'DaftarInventarisBarangController@massDestroy')->name('daftar-inventaris-barangs.massDestroy');
     Route::resource('daftar-inventaris-barangs', 'DaftarInventarisBarangController');
+
+    // Tahun Ajaran
+    Route::delete('tahun-ajarans/destroy', 'TahunAjaranController@massDestroy')->name('tahun-ajarans.massDestroy');
+    Route::post('tahun-ajarans/parse-csv-import', 'TahunAjaranController@parseCsvImport')->name('tahun-ajarans.parseCsvImport');
+    Route::post('tahun-ajarans/process-csv-import', 'TahunAjaranController@processCsvImport')->name('tahun-ajarans.processCsvImport');
+    Route::resource('tahun-ajarans', 'TahunAjaranController');
+
+    // Rombongan Belajar
+    Route::delete('rombongan-belajars/destroy', 'RombonganBelajarController@massDestroy')->name('rombongan-belajars.massDestroy');
+    Route::post('rombongan-belajars/parse-csv-import', 'RombonganBelajarController@parseCsvImport')->name('rombongan-belajars.parseCsvImport');
+    Route::post('rombongan-belajars/process-csv-import', 'RombonganBelajarController@processCsvImport')->name('rombongan-belajars.processCsvImport');
+    Route::resource('rombongan-belajars', 'RombonganBelajarController');
+
+    // Penghasilan
+    Route::delete('penghasilans/destroy', 'PenghasilanController@massDestroy')->name('penghasilans.massDestroy');
+    Route::post('penghasilans/parse-csv-import', 'PenghasilanController@parseCsvImport')->name('penghasilans.parseCsvImport');
+    Route::post('penghasilans/process-csv-import', 'PenghasilanController@processCsvImport')->name('penghasilans.processCsvImport');
+    Route::resource('penghasilans', 'PenghasilanController');
+
+    // Pendidikan Terakhir
+    Route::delete('pendidikan-terakhirs/destroy', 'PendidikanTerakhirController@massDestroy')->name('pendidikan-terakhirs.massDestroy');
+    Route::post('pendidikan-terakhirs/parse-csv-import', 'PendidikanTerakhirController@parseCsvImport')->name('pendidikan-terakhirs.parseCsvImport');
+    Route::post('pendidikan-terakhirs/process-csv-import', 'PendidikanTerakhirController@processCsvImport')->name('pendidikan-terakhirs.processCsvImport');
+    Route::resource('pendidikan-terakhirs', 'PendidikanTerakhirController');
+
+    // Kabupaten
+    Route::delete('kabupatens/destroy', 'KabupatenController@massDestroy')->name('kabupatens.massDestroy');
+    Route::post('kabupatens/parse-csv-import', 'KabupatenController@parseCsvImport')->name('kabupatens.parseCsvImport');
+    Route::post('kabupatens/process-csv-import', 'KabupatenController@processCsvImport')->name('kabupatens.processCsvImport');
+    Route::resource('kabupatens', 'KabupatenController');
+
+    // Kecamatan
+    Route::delete('kecamatans/destroy', 'KecamatanController@massDestroy')->name('kecamatans.massDestroy');
+    Route::post('kecamatans/parse-csv-import', 'KecamatanController@parseCsvImport')->name('kecamatans.parseCsvImport');
+    Route::post('kecamatans/process-csv-import', 'KecamatanController@processCsvImport')->name('kecamatans.processCsvImport');
+    Route::resource('kecamatans', 'KecamatanController');
+
+    // Agama
+    Route::delete('agamas/destroy', 'AgamaController@massDestroy')->name('agamas.massDestroy');
+    Route::post('agamas/parse-csv-import', 'AgamaController@parseCsvImport')->name('agamas.parseCsvImport');
+    Route::post('agamas/process-csv-import', 'AgamaController@processCsvImport')->name('agamas.processCsvImport');
+    Route::resource('agamas', 'AgamaController');
+
+    // No Urut
+    Route::delete('no-uruts/destroy', 'NoUrutController@massDestroy')->name('no-uruts.massDestroy');
+    Route::post('no-uruts/parse-csv-import', 'NoUrutController@parseCsvImport')->name('no-uruts.parseCsvImport');
+    Route::post('no-uruts/process-csv-import', 'NoUrutController@processCsvImport')->name('no-uruts.processCsvImport');
+    Route::resource('no-uruts', 'NoUrutController');
+
+    // Bahasa
+    Route::delete('bahasas/destroy', 'BahasaController@massDestroy')->name('bahasas.massDestroy');
+    Route::post('bahasas/parse-csv-import', 'BahasaController@parseCsvImport')->name('bahasas.parseCsvImport');
+    Route::post('bahasas/process-csv-import', 'BahasaController@processCsvImport')->name('bahasas.processCsvImport');
+    Route::resource('bahasas', 'BahasaController');
+
+    // Desa
+    Route::delete('desas/destroy', 'DesaController@massDestroy')->name('desas.massDestroy');
+    Route::post('desas/parse-csv-import', 'DesaController@parseCsvImport')->name('desas.parseCsvImport');
+    Route::post('desas/process-csv-import', 'DesaController@processCsvImport')->name('desas.processCsvImport');
+    Route::resource('desas', 'DesaController');
+
+    // Moda Transportasi
+    Route::delete('moda-transportasis/destroy', 'ModaTransportasiController@massDestroy')->name('moda-transportasis.massDestroy');
+    Route::post('moda-transportasis/parse-csv-import', 'ModaTransportasiController@parseCsvImport')->name('moda-transportasis.parseCsvImport');
+    Route::post('moda-transportasis/process-csv-import', 'ModaTransportasiController@processCsvImport')->name('moda-transportasis.processCsvImport');
+    Route::resource('moda-transportasis', 'ModaTransportasiController');
+
+    // Tahun
+    Route::delete('tahuns/destroy', 'TahunController@massDestroy')->name('tahuns.massDestroy');
+    Route::post('tahuns/parse-csv-import', 'TahunController@parseCsvImport')->name('tahuns.parseCsvImport');
+    Route::post('tahuns/process-csv-import', 'TahunController@processCsvImport')->name('tahuns.processCsvImport');
+    Route::resource('tahuns', 'TahunController');
+
+    // Smp Mts
+    Route::delete('smp-mts/destroy', 'SmpMtsController@massDestroy')->name('smp-mts.massDestroy');
+    Route::post('smp-mts/parse-csv-import', 'SmpMtsController@parseCsvImport')->name('smp-mts.parseCsvImport');
+    Route::post('smp-mts/process-csv-import', 'SmpMtsController@processCsvImport')->name('smp-mts.processCsvImport');
+    Route::resource('smp-mts', 'SmpMtsController');
+
+    // Kelas
+    Route::delete('kelas/destroy', 'KelasController@massDestroy')->name('kelas.massDestroy');
+    Route::post('kelas/parse-csv-import', 'KelasController@parseCsvImport')->name('kelas.parseCsvImport');
+    Route::post('kelas/process-csv-import', 'KelasController@processCsvImport')->name('kelas.processCsvImport');
+    Route::resource('kelas', 'KelasController');
+
+    // Mata Pelajaran
+    Route::delete('mata-pelajarans/destroy', 'MataPelajaranController@massDestroy')->name('mata-pelajarans.massDestroy');
+    Route::post('mata-pelajarans/parse-csv-import', 'MataPelajaranController@parseCsvImport')->name('mata-pelajarans.parseCsvImport');
+    Route::post('mata-pelajarans/process-csv-import', 'MataPelajaranController@processCsvImport')->name('mata-pelajarans.processCsvImport');
+    Route::resource('mata-pelajarans', 'MataPelajaranController');
+
+    // Pangkat Golongan
+    Route::delete('pangkat-golongans/destroy', 'PangkatGolonganController@massDestroy')->name('pangkat-golongans.massDestroy');
+    Route::post('pangkat-golongans/parse-csv-import', 'PangkatGolonganController@parseCsvImport')->name('pangkat-golongans.parseCsvImport');
+    Route::post('pangkat-golongans/process-csv-import', 'PangkatGolonganController@processCsvImport')->name('pangkat-golongans.processCsvImport');
+    Route::resource('pangkat-golongans', 'PangkatGolonganController');
+
+    // Tugas Tambahan
+    Route::delete('tugas-tambahans/destroy', 'TugasTambahanController@massDestroy')->name('tugas-tambahans.massDestroy');
+    Route::post('tugas-tambahans/parse-csv-import', 'TugasTambahanController@parseCsvImport')->name('tugas-tambahans.parseCsvImport');
+    Route::post('tugas-tambahans/process-csv-import', 'TugasTambahanController@processCsvImport')->name('tugas-tambahans.processCsvImport');
+    Route::resource('tugas-tambahans', 'TugasTambahanController');
+
+    // Pekerjaan
+    Route::delete('pekerjaans/destroy', 'PekerjaanController@massDestroy')->name('pekerjaans.massDestroy');
+    Route::post('pekerjaans/parse-csv-import', 'PekerjaanController@parseCsvImport')->name('pekerjaans.parseCsvImport');
+    Route::post('pekerjaans/process-csv-import', 'PekerjaanController@processCsvImport')->name('pekerjaans.processCsvImport');
+    Route::resource('pekerjaans', 'PekerjaanController');
+
+    // Daftar Siswa
+    Route::delete('daftar-siswas/destroy', 'DaftarSiswaController@massDestroy')->name('daftar-siswas.massDestroy');
+    Route::post('daftar-siswas/parse-csv-import', 'DaftarSiswaController@parseCsvImport')->name('daftar-siswas.parseCsvImport');
+    Route::post('daftar-siswas/process-csv-import', 'DaftarSiswaController@processCsvImport')->name('daftar-siswas.processCsvImport');
+    Route::resource('daftar-siswas', 'DaftarSiswaController');
 
     Route::get('messenger', 'MessengerController@index')->name('messenger.index');
     Route::get('messenger/create', 'MessengerController@createTopic')->name('messenger.createTopic');

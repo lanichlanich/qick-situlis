@@ -102,4 +102,61 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
     // Daftar Inventaris Barang
     Route::apiResource('daftar-inventaris-barangs', 'DaftarInventarisBarangApiController');
+
+    // Tahun Ajaran
+    Route::apiResource('tahun-ajarans', 'TahunAjaranApiController');
+
+    // Rombongan Belajar
+    Route::apiResource('rombongan-belajars', 'RombonganBelajarApiController');
+
+    // Penghasilan
+    Route::apiResource('penghasilans', 'PenghasilanApiController');
+
+    // Pendidikan Terakhir
+    Route::apiResource('pendidikan-terakhirs', 'PendidikanTerakhirApiController');
+
+    // Kabupaten
+    Route::apiResource('kabupatens', 'KabupatenApiController');
+
+    // Kecamatan
+    Route::apiResource('kecamatans', 'KecamatanApiController');
+
+    // Agama
+    Route::apiResource('agamas', 'AgamaApiController');
+
+    // No Urut
+    Route::apiResource('no-uruts', 'NoUrutApiController');
+
+    // Bahasa
+    Route::apiResource('bahasas', 'BahasaApiController');
+
+    // Desa
+    Route::apiResource('desas', 'DesaApiController');
+
+    // Moda Transportasi
+    Route::apiResource('moda-transportasis', 'ModaTransportasiApiController');
+
+    // Tahun
+    Route::apiResource('tahuns', 'TahunApiController');
+
+    // Smp Mts
+    Route::apiResource('smp-mts', 'SmpMtsApiController');
+
+    // Kelas
+    Route::apiResource('kelas', 'KelasApiController');
+
+    // Mata Pelajaran
+    Route::apiResource('mata-pelajarans', 'MataPelajaranApiController');
+
+    // Pangkat Golongan
+    Route::apiResource('pangkat-golongans', 'PangkatGolonganApiController');
+
+    // Tugas Tambahan
+    Route::apiResource('tugas-tambahans', 'TugasTambahanApiController');
+
+    // Pekerjaan
+    Route::apiResource('pekerjaans', 'PekerjaanApiController');
+
+    // Daftar Siswa
+    Route::apiResource('daftar-siswas', 'DaftarSiswaApiController');
 });
