@@ -197,6 +197,33 @@
                         </ul>
                     </li>
                 @endcan
+                @can('kesiswaan_access')
+                    <li class="nav-item has-treeview {{ request()->is("admin/daftar-siswas*") ? "menu-open" : "" }}">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="fa-fw nav-icon fas fa-user-graduate">
+
+                            </i>
+                            <p>
+                                {{ trans('cruds.kesiswaan.title') }}
+                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            @can('daftar_siswa_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.daftar-siswas.index") }}" class="nav-link {{ request()->is("admin/daftar-siswas") || request()->is("admin/daftar-siswas/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.daftarSiswa.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                        </ul>
+                    </li>
+                @endcan
                 @can('arsip_digital_access')
                     <li class="nav-item has-treeview {{ request()->is("admin/arsip-kependudukans*") ? "menu-open" : "" }} {{ request()->is("admin/arsip-ijazahs*") ? "menu-open" : "" }} {{ request()->is("admin/arsip-bpjs*") ? "menu-open" : "" }} {{ request()->is("admin/arsip-npwps*") ? "menu-open" : "" }} {{ request()->is("admin/arsip-pns-lainnyas*") ? "menu-open" : "" }}">
                         <a class="nav-link nav-dropdown-toggle" href="#">
@@ -568,6 +595,237 @@
                                         </i>
                                         <p>
                                             {{ trans('cruds.faqQuestion.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                        </ul>
+                    </li>
+                @endcan
+                @can('data_model_access')
+                    <li class="nav-item has-treeview {{ request()->is("admin/tahun-ajarans*") ? "menu-open" : "" }} {{ request()->is("admin/rombongan-belajars*") ? "menu-open" : "" }} {{ request()->is("admin/penghasilans*") ? "menu-open" : "" }} {{ request()->is("admin/pendidikan-terakhirs*") ? "menu-open" : "" }} {{ request()->is("admin/kabupatens*") ? "menu-open" : "" }} {{ request()->is("admin/kecamatans*") ? "menu-open" : "" }} {{ request()->is("admin/agamas*") ? "menu-open" : "" }} {{ request()->is("admin/no-uruts*") ? "menu-open" : "" }} {{ request()->is("admin/bahasas*") ? "menu-open" : "" }} {{ request()->is("admin/desas*") ? "menu-open" : "" }} {{ request()->is("admin/moda-transportasis*") ? "menu-open" : "" }} {{ request()->is("admin/tahuns*") ? "menu-open" : "" }} {{ request()->is("admin/smp-mts*") ? "menu-open" : "" }} {{ request()->is("admin/kelas*") ? "menu-open" : "" }} {{ request()->is("admin/mata-pelajarans*") ? "menu-open" : "" }} {{ request()->is("admin/pangkat-golongans*") ? "menu-open" : "" }} {{ request()->is("admin/tugas-tambahans*") ? "menu-open" : "" }} {{ request()->is("admin/pekerjaans*") ? "menu-open" : "" }}">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="fa-fw nav-icon fas fa-cogs">
+
+                            </i>
+                            <p>
+                                {{ trans('cruds.dataModel.title') }}
+                                <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            @can('tahun_ajaran_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.tahun-ajarans.index") }}" class="nav-link {{ request()->is("admin/tahun-ajarans") || request()->is("admin/tahun-ajarans/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.tahunAjaran.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('rombongan_belajar_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.rombongan-belajars.index") }}" class="nav-link {{ request()->is("admin/rombongan-belajars") || request()->is("admin/rombongan-belajars/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.rombonganBelajar.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('penghasilan_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.penghasilans.index") }}" class="nav-link {{ request()->is("admin/penghasilans") || request()->is("admin/penghasilans/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.penghasilan.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('pendidikan_terakhir_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.pendidikan-terakhirs.index") }}" class="nav-link {{ request()->is("admin/pendidikan-terakhirs") || request()->is("admin/pendidikan-terakhirs/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.pendidikanTerakhir.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('kabupaten_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.kabupatens.index") }}" class="nav-link {{ request()->is("admin/kabupatens") || request()->is("admin/kabupatens/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.kabupaten.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('kecamatan_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.kecamatans.index") }}" class="nav-link {{ request()->is("admin/kecamatans") || request()->is("admin/kecamatans/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.kecamatan.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('agama_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.agamas.index") }}" class="nav-link {{ request()->is("admin/agamas") || request()->is("admin/agamas/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.agama.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('no_urut_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.no-uruts.index") }}" class="nav-link {{ request()->is("admin/no-uruts") || request()->is("admin/no-uruts/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.noUrut.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('bahasa_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.bahasas.index") }}" class="nav-link {{ request()->is("admin/bahasas") || request()->is("admin/bahasas/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.bahasa.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('desa_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.desas.index") }}" class="nav-link {{ request()->is("admin/desas") || request()->is("admin/desas/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.desa.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('moda_transportasi_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.moda-transportasis.index") }}" class="nav-link {{ request()->is("admin/moda-transportasis") || request()->is("admin/moda-transportasis/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.modaTransportasi.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('tahun_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.tahuns.index") }}" class="nav-link {{ request()->is("admin/tahuns") || request()->is("admin/tahuns/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.tahun.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('smp_mt_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.smp-mts.index") }}" class="nav-link {{ request()->is("admin/smp-mts") || request()->is("admin/smp-mts/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.smpMt.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('kela_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.kelas.index") }}" class="nav-link {{ request()->is("admin/kelas") || request()->is("admin/kelas/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.kela.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('mata_pelajaran_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.mata-pelajarans.index") }}" class="nav-link {{ request()->is("admin/mata-pelajarans") || request()->is("admin/mata-pelajarans/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.mataPelajaran.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('pangkat_golongan_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.pangkat-golongans.index") }}" class="nav-link {{ request()->is("admin/pangkat-golongans") || request()->is("admin/pangkat-golongans/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.pangkatGolongan.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('tugas_tambahan_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.tugas-tambahans.index") }}" class="nav-link {{ request()->is("admin/tugas-tambahans") || request()->is("admin/tugas-tambahans/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.tugasTambahan.title') }}
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('pekerjaan_access')
+                                <li class="nav-item">
+                                    <a href="{{ route("admin.pekerjaans.index") }}" class="nav-link {{ request()->is("admin/pekerjaans") || request()->is("admin/pekerjaans/*") ? "active" : "" }}">
+                                        <i class="fa-fw nav-icon fas fa-cogs">
+
+                                        </i>
+                                        <p>
+                                            {{ trans('cruds.pekerjaan.title') }}
                                         </p>
                                     </a>
                                 </li>
